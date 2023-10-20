@@ -54,10 +54,10 @@ def scrap_COTD(ID):
 
     # Scrolling the page and pressing "more players" button
     for i in tqdm.tqdm(range(k)):
-        sleep(0.2)
+        sleep(0.3)
         button = driver.find_elements(By.CLASS_NAME, "button.is-fullwidth.is-info")[-1]
         button.click()
-        sleep(0.55)
+        sleep(0.7)
         actions = ActionChains(driver)
         for i in range(3):
             button = driver.find_elements(By.CLASS_NAME, "button.is-fullwidth.is-info")[-1]
